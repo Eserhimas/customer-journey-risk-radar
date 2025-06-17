@@ -1,0 +1,50 @@
+tasks:
+  - stage: Awareness
+    description: The user just discovered or is curious about the platform or its shows.
+    examples:
+      - "Is Netflix any good?"
+      - "Heard everyone talking about this new series..."
+      - "Where can I watch XYZ?"
+      - "Looking for a streaming service with good dramas."
+      
+  - stage: Signup
+    description: The user is attempting to create an account, register, or log in.
+    examples:
+      - "I can’t sign up, it keeps giving me an error."
+      - "Login page is stuck."
+      - "Why is account creation so buggy?"
+      
+  - stage: Onboarding
+    description: The user is setting up the app/device or using it for the first time.
+    examples:
+      - "Tried to connect on my Smart TV and it failed."
+      - "Got stuck during app walkthrough."
+      - "Why does it keep asking for permissions?"
+      
+  - stage: Content Discovery
+    description: The user is trying to find content but is unhappy or confused.
+    examples:
+      - "Their recommendation engine sucks."
+      - "I can't find anything decent to watch."
+      - "The search function is broken."
+      
+  - stage: Streaming Experience
+    description: The user is watching content but facing playback, resolution, or UX issues.
+    examples:
+      - "Buffering nonstop on my 4K TV."
+      - "Audio and subtitles are out of sync."
+      - "The episode just froze mid-way."
+      
+  - stage: Billing
+    description: The user is dealing with charges, refunds, payment failures, or support gaps.
+    examples:
+      - "Charged me twice and support won’t respond."
+      - "I didn’t get a refund."
+      - "My subscription expired even though I paid."
+      
+  - stage: Churn Risk
+    description: The user is considering or has already canceled, and shows high dissatisfaction.
+    examples:
+      - "I'm canceling this garbage service."
+      - "Not renewing next month."
+      - "Switched to another platform — fed up."
