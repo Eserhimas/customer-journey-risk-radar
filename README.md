@@ -50,7 +50,7 @@ tasks:
 
 ### 2. Classify Reddit Posts
 - Each post is assigned to a stage using **few-shot prompting** with `deepseek-chat-v3-0324:free` model
-- Sentiment score is calculated with VADER
+- The sentiment score is calculated with VADER
 
 ### 3. Extract Pain Points with KeyBERT
 - Only negative posts are analyzed
@@ -59,12 +59,6 @@ tasks:
 ### 4. Visualize with Streamlit
 - Filter by stage
 - View top pain point keywords + sentiment distribution
-
----
-
-## 📸 Screenshots
-
-_(Insert screenshots of the dashboard here)_
 
 ---
 
