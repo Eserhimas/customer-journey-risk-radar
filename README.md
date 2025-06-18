@@ -1,6 +1,6 @@
 # 📊 Customer Journey Risk Radar
 
-> **A strategic AI pipeline to uncover customer pain points from public data sources — mapped across the OTT customer journey.**
+> **A strategic AI pipeline to uncover customer pain points from public data sources such as Reddit, Twitter, Google Play, App Store or YouTube — mapped across the OTT customer journey.**
 
 ---
 
@@ -23,23 +23,6 @@ OTT (Over-the-top) platforms like Netflix, Disney+, or local streaming apps are 
 - Churn risk is high and sensitive to friction
 
 ---
-
-## 🧱 Project Architecture
-
-```mermaid
-graph TD
-  A[Reddit Data] --> B[Preprocessing]
-  B --> C[Sentiment Scoring (VADER)]
-  B --> D[YAML Journey Stages]
-  D --> E[GPT-based Classification (LangChain + OpenRouter)]
-  E --> F[Journey Stage Assignment]
-  F --> G[Negative Filter + KeyBERT]
-  G --> H[Streamlit Dashboard]
-  H --> I[Strategic Insights]
-```
-
----
-
 ## ⚙️ Tools & Technologies
 
 | Layer            | Tool/Library                            |
@@ -66,7 +49,7 @@ tasks:
 ```
 
 ### 2. Classify Reddit Posts
-- Each post is assigned to a stage using **few-shot prompting** with `deepseek-chat` model
+- Each post is assigned to a stage using **few-shot prompting** with `deepseek-chat-v3-0324:free` model
 - Sentiment score is calculated with VADER
 
 ### 3. Extract Pain Points with KeyBERT
