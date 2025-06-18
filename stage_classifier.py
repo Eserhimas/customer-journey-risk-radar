@@ -13,7 +13,7 @@ load_dotenv()
 with open("tasks.yaml", "r") as file:
     stage_config = yaml.safe_load(file)["tasks"]
     
-# --- OpenRouter Model Integration ---
+# OpenRouter
 class ChatOpenRouter(ChatOpenAI):
     openai_api_base: str
     openai_api_key: str
